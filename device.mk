@@ -55,6 +55,10 @@ PRODUCT_PACKAGES += \
     NfcNci \
     Tag
 
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
 # SKU-specific properties
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/sku_props/build_ss_vendor.prop:$(TARGET_COPY_OUT_VENDOR)/build_ss_vendor.prop \
