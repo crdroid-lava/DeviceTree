@@ -29,6 +29,9 @@ PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/aurisys_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/aurisys_config.xml
 
+# Google Core apps
+$(call inherit-product-if-exists, vendor/gapps/core/config.mk)
+
 # Overlays
 PRODUCT_PACKAGES += \
     FrameworksResOverlayLava
