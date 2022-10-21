@@ -32,6 +32,9 @@ PRODUCT_COPY_FILES += \
 # Google Core apps
 $(call inherit-product-if-exists, vendor/gapps/core/config.mk)
 
+# Gore apps
+$(call inherit-product-if-exists, vendor/apps/apps.mk)
+
 # Overlays
 PRODUCT_PACKAGES += \
     FrameworksResOverlayLava
