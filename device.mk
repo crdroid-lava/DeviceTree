@@ -35,6 +35,10 @@ $(call inherit-product-if-exists, vendor/gapps/core/config.mk)
 # Gore apps
 $(call inherit-product-if-exists, vendor/apps/apps.mk)
 
+# GrapheneCamera
+PRODUCT_PACKAGES += \
+    GrapheneOSCamera
+
 # Overlays
 PRODUCT_PACKAGES += \
     FrameworksResOverlayLava
