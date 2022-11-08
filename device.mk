@@ -35,6 +35,12 @@ $(call inherit-product-if-exists, vendor/gapps/core/config.mk)
 # Gore apps
 $(call inherit-product-if-exists, vendor/apps/apps.mk)
 
+# PixelLauncherMod
+$(call inherit-product-if-exists, vendor/PixelLauncher/PixelLauncher.mk)
+PIXEL_LAUNCHER_VARIANT := khonsu
+ICONS_VARIANT := teamfilesicons
+AOSP_ENHANCER := true
+
 # Overlays
 PRODUCT_PACKAGES += \
     FrameworksResOverlayLava
