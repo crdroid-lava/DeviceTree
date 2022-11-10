@@ -45,6 +45,10 @@ AOSP_ENHANCER := true
 PRODUCT_PACKAGES += \
     FrameworksResOverlayLava
 
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay
+
 # Kernel
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/prebuilt/dtb.img:dtb.img
